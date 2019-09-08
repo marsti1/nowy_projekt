@@ -1,0 +1,89 @@
+body{
+  background-color: teal;
+}
+.menu{
+  background-color: black;
+  position: fixed;
+  top: 10;
+  left: 0;
+  right: 0;
+  padding-top:10px;
+  padding-bottom: 10px;
+  color: white;
+}
+.cont{
+  padding-top: 50px;
+  background-color: white;
+}
+.how{
+  background-color: white;
+  margin-top: 20px;
+}
+.ikonka{
+  float: left;
+  
+}
+
+.img-responsive{
+  max-width: 100%;
+  height: auto;
+  display:block;
+}
+.clear{
+  clear: both;;
+}
+
+  .menu li {
+    display: block;
+    float: left;
+    border: 1px solid #ffffff;
+  }
+  
+  .menu a:link, .menu a:visited {
+    display: block;
+    text-decoration: none;
+    font-family:arial;
+    font-weight: bold;
+    width:130px;
+    text-align: center;
+    padding: 4px 0px 4px 0px;
+    background-color: #000000;
+    color: #ffffff;
+    
+  }
+  
+  .menu a:hover {
+    background-color: #213873;
+    color: #ffffff;
+  }
+#container{
+    
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#description{
+  background-color: white;
+}
+
+.menu-firmy li{
+   float: left;
+   display: block;
+}
+  .menu-firmy a:link, .menu-firmy a:visited {
+    display: block;
+    text-decoration: none;
+    font-family:arial;
+    font-weight: bold;
+    width:130px;
+    text-align: center;
+    padding: 4px 0px 4px 0px;
+  }
+  .firmy{
+    text-align: center;
+  }
+  #error{
+    color: red;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    }
