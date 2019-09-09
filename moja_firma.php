@@ -1,10 +1,7 @@
 <?php
     session_start();
     //dane do dostępu do bazy danych
-    $host = 'localhost';
-    $baza = 'baza_firm';
-    $uzytkownik = 'root';
-    $haslo = '';
+    require_once "connect.php";
     //sprawdz czy użytkownik ma firmę 
     //czy id istnieje w bazie danycj DODAC!!!
     if (!isset($_SESSION['mamfirme'])) 

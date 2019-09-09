@@ -3,10 +3,7 @@
 	session_start();
 	
 	//dane do dostępu do bazy danych
-	$host = 'localhost';
-	$baza = 'baza_firm';
-	$uzytkownik = 'root';
-	$haslo = '';
+	require_once "connect.php";
 
 	//funkcja logująca
 	function checkPass($user, $pass)
