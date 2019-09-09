@@ -4,7 +4,10 @@
 session_start();
 
 //dane do dostępu do bazy danych
-require_once "connect.php";
+$host = 'localhost';
+$baza = 'baza_firm';
+$uzytkownik = 'root';
+$haslo = '';
 
 	if (isset($_POST['email']))
 	{
