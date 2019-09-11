@@ -61,7 +61,7 @@ require_once "connect.php";
         	$_SESSION['e_regulamin'] = "Zatwierdź regulamin";
         }
         //recaptcha sprawdż
-        $sekret = "6LcPiT0UAAAAAL0-EXREX3RKVOezPae9ImKe6M4i";
+        $sekret = "6LdS6LcUAAAAAIwyBlpVqLqHh6G_jdUFkWmuHgel";
         $sprawdz = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$sekret.'&response='.$_POST['g-recaptcha-response']);
         $odpowiedz = json_decode($sprawdz);
         if ($odpowiedz->success==false) 

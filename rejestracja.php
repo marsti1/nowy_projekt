@@ -177,7 +177,7 @@
 
 
 				 ?>
-        		<div class="g-recaptcha" data-sitekey="6LcPiT0UAAAAAGe-rEFVRhYRXMfwE3tubZK3KhMZ"></div>
+        		<div class="g-recaptcha" data-sitekey="6LdS6LcUAAAAABkdLVaFAq5YpQYSxIu_T9Nh53OR"></div>
         		<br/>
         		<?php 
       

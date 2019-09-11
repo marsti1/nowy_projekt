@@ -14,7 +14,7 @@ session_start();
                         }
 //połączenie z bazą w celu pszeszukania istniejących firm
      
-            $polaczenie = new mysqli($host, $uzytkownik, '', $baza);
+            $polaczenie = new mysqli($host, $uzytkownik, $haslo, $baza);
             if ($rezultat = $polaczenie->connect_errno)
             {
                 $blad = "Połączenie nieudane";
