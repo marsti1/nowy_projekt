@@ -30,7 +30,6 @@
 		
 	        <div class="modal-content">
 	        	<div class="cont">
-	        	<div class="test">&times</div>
 	        	<h1>Zaloguj się</h1>
 	        	<form action="zaloguj.php" method="POST">
 	        		<label for="username" class="col-sm-3">Login lub e-mail:</label>
@@ -43,7 +42,7 @@
 	        	</form>
 	        	<p><?php echo $komunikat; ?></p>
 	        	<div class="login" style="background-color:#f1f1f1">
-				    <button type="button" class="cancelbtn">Cancel</button>
+				    <button type="button" class="cancelbtn" id="cancelbtn">Anuluj</button>
 				    <span class="psw">Forgot <a href="#">password?</a></span>
 				</div>
 	        </div>

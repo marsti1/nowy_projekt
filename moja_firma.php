@@ -2,6 +2,15 @@
     session_start();
     //dane do dostępu do bazy danych
     require_once "connect.php";
+    //sprawdź czy zalogowany aby ustawić przycisk login/logout
+                    if (isset($_SESSION['zalogowany']))
+                        {
+                            $zalogowany = "logout.php";
+                        } 
+                        else
+                        {
+                            $zalogowany = "#";
+                        }
     //sprawdz czy użytkownik ma firmę 
     //czy id istnieje w bazie danycj DODAC!!!
     if (!isset($_SESSION['mamfirme'])) 
@@ -95,23 +104,47 @@
 
 <body>
 	<div id="container">
-<div class="container-fluid">
-	<div class="row menu">
-			
-		
-			<div class="col-xs-6 col-md-6">
-				<div><a href="index.php">Home</a></div>
-			</div>
-			<div class="col-xs-6 col-md-6">
-		<ul>
-			<li><a href="firmy.html">Firmy</a></li>
-			<li><a href="rejestracja.php">Dołącz do firm</a></li>
-			<li><a href="login.php">Zaloguj się</a></li>
-			<li><a href="#">PL DE ENG</a></li>
-		</ul>
-	</div>
-	</div>
-	</div>
+        <nav class="navbar navbar-dark navbar-expand-lg menu">
+        <a href="index.php" class="navbar-brand">HOME</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainmenu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"> <a href="firmy.php" class="nav-link">Firmy</a></li>
+                <li class="nav-item"> <a href="rejestracja.php" class="nav-link">Dołącz do firm</a></li>
+                <li id="loginbtn" class="nav-item"> <a href="<?=$zalogowany ?>" class="nav-link">
+                    <?php
+                        if (isset($_SESSION['zalogowany']))
+                        {
+                            echo "Wyloguj się";
+                        } 
+                        else
+                        {
+                            echo "Zaloguj się";
+                        }
+                    ?>
+                    </a></li>
+
+                <li class="nav-item dropdown"> 
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" id="submenu">PL DE ENG</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Polski</a>
+                        <a href="#" class="dropdown-item">Deutsch</a>
+                        <a href="#" class="dropdown-item">English</a>
+                    </div>
+                </li>
+                
+            </ul>
+            <form class="form-inline">
+                
+                    <input class="form-control mr-1" type="search" placeholder="Wyszukaj" aria-label="Wyszukaj">
+                    <button class="btn btn-light" type="submit">Znajdź</button>
+                
+                </form>
+        </div>
+    </nav>
 
 	<div class="cont">
 		

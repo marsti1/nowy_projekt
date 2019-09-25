@@ -106,7 +106,7 @@ session_start();
         <div id="description">
         	<h1>Odbieraj zlecenia od firm zagranicznych</h1>
         	<h2>Zarejestruj się i dodaj swoją firmę na stronę, opisz profil jej działalności a my ci pomożemy w znalezieniu klienta zagranicznego. Korzystanie z naszych usług pomoże ci zaoszczędzić czas i pieniądze.</h2>
-        	<button type="submit" class="btn btn-primary btn-block button">Dołącz do nas</button>
+            <a href="rejestracja.php" class="btn btn-primary btn-block button">Dołącz do nas</a>
         </div>
         <div class="how">
         	<h1>Jak to działa</h1>

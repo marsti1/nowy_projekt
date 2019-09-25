@@ -14,7 +14,7 @@ session_start();
                             $zalogowany = "#";
                         }
                         
-include 'constants.php';
+//include 'constants.php';
 
 //dane do dostępu do bazy danych
 require_once "connect.php";
